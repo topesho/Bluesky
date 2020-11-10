@@ -12,7 +12,7 @@ public class Hooks {
     @Before
     public WebDriver getDriver(){
         if(driver == null){
-            System.setProperty("webdriver.chrome.driver","C:\\CITADELTEST\\src\\test\\resources\\chromeDriver\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver","src/test/resources/chromeDriver/chromedriver");
             driver = new ChromeDriver();
         }
         return driver;

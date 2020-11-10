@@ -1,0 +1,194 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-07T22:27:00.328Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6282141762,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.getDriver()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Check Output window",
+        "description": "",
+        "id": "test-1;check-output-window",
+        "after": [
+          {
+            "result": {
+              "duration": 207838060,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4300447283,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a user navigate to https://dotnetfiddle.net/",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dotnetfiddle.net/",
+                  "offset": 19
+                }
+              ],
+              "location": "HomeSteps.aUserNavigateTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 408674463,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a user click on run button",
+            "match": {
+              "location": "HomeSteps.aUserClickOnRunButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 271926357,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the text Hello World is displayed in the Output Window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hello World",
+                  "offset": 9
+                }
+              ],
+              "location": "HomeSteps.theTextIsDisplayedInTheOutputWindow(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-07T22:27:11.985Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2251872391,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.getDriver()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Check Output window2",
+        "description": "",
+        "id": "test-1;check-output-window2",
+        "after": [
+          {
+            "result": {
+              "duration": 169127909,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2902801914,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "a user navigate to https://dotnetfiddle.net/",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://dotnetfiddle.net/",
+                  "offset": 19
+                }
+              ],
+              "location": "HomeSteps.aUserNavigateTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 473773507,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "a user click on run button",
+            "match": {
+              "location": "HomeSteps.aUserClickOnRunButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205360923,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the text Hello World is displayed in the Output Window",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hello World",
+                  "offset": 9
+                }
+              ],
+              "location": "HomeSteps.theTextIsDisplayedInTheOutputWindow(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Test 1",
+    "description": "  As a user of the site\n  I want to confirm i can do certain things",
+    "id": "test-1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Home.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -7,6 +7,11 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.HomePage;
 import utilities.Hooks;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.equalToIgnoringCase;
+import static org.junit.Assert.assertTrue;
+
 public class HomeSteps {
     public WebDriver driver;
 
@@ -23,11 +28,23 @@ public class HomeSteps {
     }
 
     @And("^a user click on run button$")
-    public void aUserClickOnRunButton() {
+    public void aUserClickOnRunButton() {homePage.clickRunButton();
     }
 
     @Then("^the text (.*) is displayed in the Output Window$")
     public void theTextIsDisplayedInTheOutputWindow(String windowOutput)  {
+
+        /**
+         * hamcrest assertion
+         */
+          assertThat(homePage.getWindowOutputText(), equalToIgnoringCase(windowOutput));
+          assertThat(homePage.isWindowOutputDisplayed(),equalTo(true));
+
+        /**
+         * Junit assertion
+         */
+        assertTrue(homePage.isWindowOutputDisplayed());
+        assertTrue(homePage.getWindowOutputText().contentEquals(windowOutput));
 
     }
 }

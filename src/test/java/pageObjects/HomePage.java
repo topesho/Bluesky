@@ -19,4 +19,17 @@ public class HomePage {
     public void navigateToUrl(String url){
         driver.navigate().to(url);
     }
+
+    public void clickRunButton(){
+       driver.findElement(runButton).click();
+    }
+
+    public Boolean isWindowOutputDisplayed(){
+        return driver.findElement(windowOutPut).isDisplayed();
+    }
+
+    public String getWindowOutputText(){
+        return driver.findElement(windowOutPut).getText();
+    }
+
 }
